@@ -50,7 +50,7 @@ async function api(path, { method = "GET", body } = {}) {
 
 // ---------- BRANDING ---------- //
 async function loadBranding() {
-    const cacheKey = "onion-dark-branding-cache";
+    const cacheKey = "bilal-vip-branding-cache";
     try {
         const cached = JSON.parse(sessionStorage.getItem(cacheKey) || "null");
         if (cached?.branding && Date.now() - cached.savedAt < 5 * 60 * 1000) {
@@ -87,7 +87,7 @@ async function logout() {
 }
 
 const COLOR_THEME_OPTIONS = [
-    { id: "default", label: "Onion Dark", swatch: "#080d0b" },
+    { id: "default", label: "BILAL VIP", swatch: "#090a0e" },
     { id: "midnight", label: "Midnight", swatch: "#0a0d14" },
     { id: "graphite", label: "Graphite", swatch: "#17191d" },
     { id: "frost", label: "Frost", swatch: "#dfe7ef" },
@@ -125,14 +125,14 @@ const THEME_OPTIONS = [...COLOR_THEME_OPTIONS, ...XTHEME_OPTIONS];
 function applyTheme(themeId) {
     const theme = THEME_OPTIONS.some((item) => item.id === themeId) ? themeId : "default";
     document.documentElement.dataset.theme = theme;
-    localStorage.setItem("onion-dark-theme", theme);
+    localStorage.setItem("bilal-vip-theme", theme);
 
     document.querySelectorAll("[data-theme]").forEach((option) => {
         option.classList.toggle("is-selected", option.dataset.theme === theme);
     });
 }
 
-applyTheme(localStorage.getItem("onion-dark-theme") || "default");
+applyTheme(localStorage.getItem("bilal-vip-theme") || "default");
 
 // ---------- NAV (dipakai kotak-kotak di Dashboard, bukan sidebar) ---------- //
 const NAV_ITEMS = [
@@ -186,7 +186,7 @@ function renderShell(user, activeHref) {
         ? `<a class="sidebar-link" href="${brand.telegramOwnerContact}" target="_blank" rel="noopener">${icon("owner")}<span>Owner</span></a>`
         : "";
     const logoMarkup = brand.logoPhoto
-        ? `<img class="brand-photo" src="${brand.logoPhoto}" alt="${brand.webName || "Onion Dark"} logo">`
+        ? `<img class="brand-photo" src="${brand.logoPhoto}" alt="${brand.webName || "BILAL VIP"} logo">`
         : "";
     const menuLogoMarkup = brand.logoPhoto
         ? `<img class="menu-logo" src="${brand.logoPhoto}" alt="Open sidebar">`
@@ -221,7 +221,7 @@ function renderShell(user, activeHref) {
         <aside class="sidebar" id="sidebar">
             <a class="sidebar-brand" href="/dashboard.html" aria-label="Open dashboard" title="Dashboard">
                 ${logoMarkup}
-                <span class="sidebar-brand-copy"><strong class="brand-wordmark brand-wordmark-sidebar">${brand.webName || "Onion Dark"}</strong><small>${brand.panelLabel || "Onion Dark Control"}</small></span>
+                <span class="sidebar-brand-copy"><strong class="brand-wordmark brand-wordmark-sidebar">${brand.webName || "BILAL VIP"}</strong><small>${brand.panelLabel || "BILAL VIP Control"}</small></span>
             </a>
             <div class="sidebar-section-label">Workspace</div>
             <nav class="sidebar-navigation" aria-label="Primary navigation">

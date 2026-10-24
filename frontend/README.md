@@ -1,6 +1,6 @@
-# SHOYU Panel — Frontend
+# BILAL VIP — Frontend
 
-Folder ini berisi frontend SHOYU Panel. Folder yang sama dapat disajikan oleh backend lokal/VPS atau dipublish ke Vercel.
+Folder ini berisi frontend BILAL VIP. Folder yang sama dapat disajikan oleh backend lokal/VPS atau dipublish ke Vercel.
 
 ## Struktur folder
 

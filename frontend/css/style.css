@@ -2,30 +2,30 @@
 
 :root {
     --sidebar-w: 240px;
-    --bg: #080d0b;
-    --bg-elevated: #101a13;
-    --bg-soft: #18251c;
-    --border: rgba(175, 228, 118, 0.15);
-    --border-hover: rgba(193, 244, 128, 0.34);
-    --text: #edf5e9;
-    --text-muted: #b7c7af;
-    --text-faint: #86977f;
+    --bg: #090a0e;
+    --bg-elevated: #111116;
+    --bg-soft: #1b1914;
+    --border: rgba(233, 187, 88, 0.15);
+    --border-hover: rgba(240, 207, 123, 0.34);
+    --text: #f6f1e5;
+    --text-muted: #c4bba6;
+    --text-faint: #8f8775;
     --white: #ffffff;
     --success: #4ade80;
     --warning: #eab308;
     --danger: #f87171;
     --muted: #9aa6b8;
-    --accent: #a7e65c;
-    --accent-strong: #d6ff88;
-    --glow-soft: rgba(148, 226, 77, 0.16);
-    --glow-focus: rgba(176, 247, 94, 0.28);
+    --accent: #e9bb58;
+    --accent-strong: #fff0b4;
+    --glow-soft: rgba(233, 187, 88, 0.16);
+    --glow-focus: rgba(240, 207, 123, 0.28);
     --panel-shadow: 0 18px 40px rgba(2,6,13,.22);
     --panel-shadow-strong: 0 24px 48px rgba(2,6,13,.26);
     --radius: 20px;
     --radius-sm: 12px;
-    --glass: rgba(142, 192, 116, 0.055);
-    --glass-hover: rgba(166, 224, 125, 0.1);
-    --glass-strong: rgba(179, 239, 123, 0.13);
+    --glass: rgba(232, 196, 108, 0.055);
+    --glass-hover: rgba(232, 196, 108, 0.1);
+    --glass-strong: rgba(232, 196, 108, 0.13);
     --motion-ease: cubic-bezier(.22, 1, .36, 1);
     --motion-fast: 180ms;
 }
@@ -66,17 +66,17 @@
 
 :root[data-theme="default"] body {
     background:
-        radial-gradient(760px circle at 12% -12%, rgba(161,230,83,.13), transparent 48%),
-        radial-gradient(620px circle at 92% 4%, rgba(75,201,143,.09), transparent 48%),
-        linear-gradient(180deg, #0a100c 0%, #070a08 100%);
+        radial-gradient(760px circle at 12% -12%, rgba(233,187,88,.13), transparent 48%),
+        radial-gradient(620px circle at 92% 4%, rgba(169,108,34,.08), transparent 48%),
+        linear-gradient(180deg, #0d0d10 0%, #070709 100%);
 }
 :root[data-theme="default"] body::before {
     background:
-        radial-gradient(700px circle at 50% 108%, rgba(155,226,94,.1), transparent 62%),
-        linear-gradient(135deg, rgba(196,255,151,.035), transparent 42%);
+        radial-gradient(700px circle at 50% 108%, rgba(233,187,88,.1), transparent 62%),
+        linear-gradient(135deg, rgba(255,240,180,.035), transparent 42%);
 }
 :root[data-theme="default"] body::after {
-    background: radial-gradient(520px circle at 52% 40%, rgba(161,235,97,.035), transparent 70%);
+    background: radial-gradient(520px circle at 52% 40%, rgba(233,187,88,.035), transparent 70%);
 }
 :root[data-theme="default"] .card,
 :root[data-theme="default"] .nav-box,
@@ -84,26 +84,26 @@
 :root[data-theme="default"] .theme-menu,
 :root[data-theme="default"] .theme-option,
 :root[data-theme="default"] .panel-shell {
-    border-color: rgba(180,231,130,.17);
-    background: linear-gradient(145deg, rgba(177,236,123,.08), rgba(255,255,255,.018) 46%, rgba(57,138,93,.045)), rgba(12,20,15,.76);
-    box-shadow: 0 18px 40px rgba(0,0,0,.28), inset 0 1px 0 rgba(220,255,196,.1), inset 0 -1px 0 rgba(255,255,255,.02), 0 0 26px rgba(139,220,79,.065);
+    border-color: rgba(233,187,88,.17);
+    background: linear-gradient(145deg, rgba(233,187,88,.08), rgba(255,255,255,.018) 46%, rgba(169,108,34,.045)), rgba(12,20,15,.76);
+    box-shadow: 0 18px 40px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,240,180,.1), inset 0 -1px 0 rgba(255,255,255,.02), 0 0 26px rgba(233,187,88,.065);
     backdrop-filter: blur(24px) saturate(135%);
     -webkit-backdrop-filter: blur(24px) saturate(135%);
 }
 :root[data-theme="default"] .card::before,
 :root[data-theme="default"] .nav-box::before {
-    background: linear-gradient(125deg, rgba(222,255,193,.1), transparent 32%, transparent 68%, rgba(110,221,151,.04));
+    background: linear-gradient(125deg, rgba(255,240,180,.1), transparent 32%, transparent 68%, rgba(169,108,34,.04));
 }
 :root[data-theme="default"] .card:hover,
 :root[data-theme="default"] .nav-box:hover,
 :root[data-theme="default"] .theme-option:hover {
-    border-color: rgba(196,245,137,.34);
-    box-shadow: 0 22px 46px rgba(0,0,0,.3), inset 0 1px 0 rgba(225,255,198,.15), 0 0 30px rgba(148,226,77,.13);
+    border-color: rgba(240,207,123,.34);
+    box-shadow: 0 22px 46px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,240,180,.15), 0 0 30px rgba(233,187,88,.13);
 }
 :root[data-theme="default"] .sidebar {
-    background: linear-gradient(180deg, rgba(17,29,21,.92), rgba(8,14,10,.86));
-    border-color: rgba(169,222,117,.14);
-    box-shadow: 0 16px 34px rgba(0,0,0,.22), inset 0 1px 0 rgba(215,255,181,.055);
+    background: linear-gradient(180deg, rgba(17,17,22,.92), rgba(9,10,14,.86));
+    border-color: rgba(233,187,88,.14);
+    box-shadow: 0 16px 34px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,240,180,.055);
     backdrop-filter: blur(24px) saturate(130%);
     -webkit-backdrop-filter: blur(24px) saturate(130%);
 }
@@ -118,48 +118,48 @@
 :root[data-theme="default"] .topbar .role-badge,
 :root[data-theme="default"] .topbar .back-btn,
 :root[data-theme="default"] .topbar .menu-toggle {
-    border-color: rgba(178,231,127,.17);
-    background: linear-gradient(145deg, rgba(176,237,125,.09), rgba(255,255,255,.018));
-    box-shadow: inset 0 1px 0 rgba(221,255,191,.08), 0 6px 16px rgba(0,0,0,.2);
+    border-color: rgba(233,187,88,.17);
+    background: linear-gradient(145deg, rgba(233,187,88,.09), rgba(255,255,255,.018));
+    box-shadow: inset 0 1px 0 rgba(255,240,180,.08), 0 6px 16px rgba(0,0,0,.2);
 }
 :root[data-theme="default"] .page-dashboard .bottom-navigation {
-    border-color: rgba(178,231,127,.17);
-    background: linear-gradient(135deg, rgba(172,233,123,.07), rgba(255,255,255,.012) 48%, rgba(82,188,128,.035)), rgba(11,19,14,.48);
-    box-shadow: 0 18px 42px rgba(0,0,0,.24), inset 0 1px 0 rgba(221,255,191,.075), 0 0 28px rgba(139,220,79,.06);
+    border-color: rgba(233,187,88,.17);
+    background: linear-gradient(135deg, rgba(233,187,88,.07), rgba(255,255,255,.012) 48%, rgba(169,108,34,.035)), rgba(11,19,14,.48);
+    box-shadow: 0 18px 42px rgba(0,0,0,.24), inset 0 1px 0 rgba(255,240,180,.075), 0 0 28px rgba(233,187,88,.06);
 }
 :root[data-theme="default"] .page-dashboard .bottom-navigation .nav-box {
-    border-color: rgba(178,231,127,.14);
-    background: linear-gradient(145deg, rgba(172,233,123,.065), rgba(255,255,255,.012));
+    border-color: rgba(233,187,88,.14);
+    background: linear-gradient(145deg, rgba(233,187,88,.065), rgba(255,255,255,.012));
 }
 :root[data-theme="default"] .page-dashboard .bottom-navigation .nav-box:hover {
-    border-color: rgba(196,245,137,.34);
-    box-shadow: 0 10px 24px rgba(0,0,0,.22), 0 0 18px rgba(148,226,77,.12);
+    border-color: rgba(240,207,123,.34);
+    box-shadow: 0 10px 24px rgba(0,0,0,.22), 0 0 18px rgba(233,187,88,.12);
 }
 :root[data-theme="default"] .page-dashboard .bottom-navigation .nav-box .icon {
-    border-color: rgba(178,231,127,.15);
-    background: rgba(162,230,91,.09);
+    border-color: rgba(233,187,88,.15);
+    background: rgba(233,187,88,.09);
     color: var(--accent);
 }
 :root[data-theme="default"] .sidebar-brand-copy strong.brand-wordmark {
-    background: linear-gradient(110deg, #f2ffe4 0%, #c6fa82 52%, #68d79a 100%);
+    background: linear-gradient(110deg, #fffaf0 0%, #e9bb58 52%, #a96c22 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 16px rgba(164,235,87,.18);
+    text-shadow: 0 0 16px rgba(233,187,88,.18);
 }
 :root[data-theme="default"] .login-splash strong.brand-wordmark {
-    background: linear-gradient(110deg, #ffffff 0%, #d7ff91 52%, #66dda0 100%);
+    background: linear-gradient(110deg, #ffffff 0%, #fff0b4 52%, #d8a447 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 18px rgba(183,244,105,.2), 0 0 34px rgba(74,211,143,.14);
+    text-shadow: 0 0 18px rgba(233,187,88,.2), 0 0 34px rgba(169,108,34,.14);
 }
 :root[data-theme="default"] .sidebar-brand .brand-photo {
-    border-color: rgba(190,242,138,.28);
-    box-shadow: 0 0 20px rgba(148,226,77,.14);
+    border-color: rgba(233,187,88,.28);
+    box-shadow: 0 0 20px rgba(233,187,88,.14);
 }
 :root[data-theme="default"] .sidebar-brand:hover .brand-photo {
-    box-shadow: 0 0 24px rgba(148,226,77,.24);
+    box-shadow: 0 0 24px rgba(233,187,88,.24);
 }
 
 :root[data-theme="frost"] { --bg:#dfe7ef; --bg-elevated:#f4f7fa; --glass:rgba(255,255,255,.48); --glass-hover:rgba(255,255,255,.7); --border:rgba(38,52,68,.16); --border-hover:rgba(38,52,68,.3); --text:#172333; --text-muted:#4e6072; --text-faint:#718293; --white:#172333; --accent:#315f91; --glow-soft:rgba(49,95,145,.16); --glow-focus:rgba(49,95,145,.24); }
@@ -2944,6 +2944,8 @@ tr:last-child td { border-bottom: none; }
 .pricing-owner { display: inline-flex; align-items: center; gap: 10px; margin: 4px 0 12px; padding: 7px 14px 7px 7px; border: 1px solid var(--border); border-radius: 999px; background: var(--glass); color: var(--text); }
 .pricing-owner[hidden] { display: none; }
 .pricing-owner img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
+.pricing-owner-copy { display: grid; gap: 2px; text-align: left; }
+.pricing-owner-copy small { color: var(--text-muted); font-size: 10px; }
 
 /* Pricing hero follows the active theme instead of the old blue accent. */
 .pricing-shell {

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="gold" x1="84" y1="61" x2="420" y2="455" gradientUnits="userSpaceOnUse"><stop stop-color="#fff0b4"/><stop offset=".45" stop-color="#e9bb58"/><stop offset="1" stop-color="#a96c22"/></linearGradient>
+    <radialGradient id="night" cx="0" cy="0" r="1" gradientTransform="matrix(0 350 -350 0 256 240)" gradientUnits="userSpaceOnUse"><stop stop-color="#24201a"/><stop offset="1" stop-color="#08090d"/></radialGradient>
+    <filter id="glow" x="66" y="60" width="380" height="390" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="19"/></filter>
+  </defs>
+  <rect width="512" height="512" rx="132" fill="url(#night)"/>
+  <rect x="1" y="1" width="510" height="510" rx="131" stroke="url(#gold)" stroke-opacity=".32" stroke-width="2"/>
+  <path d="m256 77 24 69 70-28-15 74 80 11-55 52 55 52-80 11 15 74-70-28-24 69-24-69-70 28 15-74-80-11 55-52-55-52 80-11-15-74 70 28 24-69Z" fill="#e9bb58" fill-opacity=".12" filter="url(#glow)"/>
+  <path d="M143 199h226l-19 211H162l-19-211Z" fill="#101116" stroke="url(#gold)" stroke-width="9" stroke-linejoin="round"/>
+  <path d="m175 197 25-66 57 47 55-47 25 66" fill="#191714" stroke="url(#gold)" stroke-width="11" stroke-linejoin="round"/>
+  <path d="m178 187 20 13 2-28 25 17 3-38 27 31 27-31 3 38 25-17 2 28 20-13" stroke="url(#gold)" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M183 234h146M194 366h124" stroke="url(#gold)" stroke-opacity=".56" stroke-width="4" stroke-linecap="round"/>
+  <text x="256" y="322" fill="url(#gold)" font-family="Arial,sans-serif" font-size="82" font-weight="800" letter-spacing="-8" text-anchor="middle">BV</text>
+  <circle cx="130" cy="158" r="5" fill="#fff0b4"/><circle cx="382" cy="158" r="5" fill="#e9bb58"/><circle cx="132" cy="367" r="4" fill="#e9bb58"/><circle cx="380" cy="367" r="4" fill="#fff0b4"/>
+</svg>
