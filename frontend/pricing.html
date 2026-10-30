@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pricing - BILAL VIP</title>
-<link rel="stylesheet" href="/css/style.css?v=20261024-bilal-vip">
+<title>Pricing - Onion Dark</title>
+<link rel="stylesheet" href="/css/style.css?v=20261021-onion-dark">
 </head>
 <body>
 <div class="pricing-shell">
@@ -15,7 +15,7 @@
                 <div class="pricing-hero-body">
                     <div class="brand pricing-brand">
                         <span class="icon" id="brand-icon"></span>
-                        <h1 id="brand-title" class="brand-wordmark brand-wordmark-pricing">BILAL VIP</h1>
+                        <h1 id="brand-title" class="brand-wordmark brand-wordmark-pricing">ONION DARK</h1>
                     </div>
                     <div class="pricing-hero-copy">
                         <h2>Private network. Complete control.</h2>
@@ -34,14 +34,14 @@
 
         <div class="pricing-footer">
             <p>Need help? Contact owner or channel below.</p>
-            <div class="pricing-owner" id="pricing-owner" hidden><img id="owner-photo" alt="Owner profile"><span class="pricing-owner-copy"><strong id="owner-name"></strong><small id="owner-username" hidden></small></span></div>
+            <div class="pricing-owner" id="pricing-owner" hidden><img id="owner-photo" alt="Owner profile"><strong id="owner-name"></strong></div>
             <p><a href="/index.html">Login</a> · <a id="channel-link" href="#" target="_blank" rel="noopener">Telegram Channel</a> · <a id="owner-link" href="#" target="_blank" rel="noopener">Owner Contact</a></p>
         </div>
     </div>
 </div>
 
 <script src="/js/icons.js"></script>
-<script src="/js/api.js?v=20261024-bilal-vip"></script>
+<script src="/js/api.js?v=20261021-onion-dark"></script>
 <script>
     async function renderPricing() {
         const brand = await loadBranding() || window.__BRAND__ || {};
@@ -64,15 +64,10 @@
         if (brand.ownerName || brand.ownerPhoto) {
             owner.hidden = false;
             document.getElementById("owner-name").textContent = brand.ownerName || "Owner";
-            const ownerUsername = document.getElementById("owner-username");
-            if (brand.ownerUsername) {
-                ownerUsername.textContent = `@${String(brand.ownerUsername).replace(/^@/, "")}`;
-                ownerUsername.hidden = false;
-            }
             if (brand.ownerPhoto) document.getElementById("owner-photo").src = brand.ownerPhoto;
         }
         if (brand.logoPhoto) {
-            brandIcon.innerHTML = `<img class="brand-photo splash-photo" src="${brand.logoPhoto}" alt="${brand.webName || 'BILAL VIP'} logo">`;
+            brandIcon.innerHTML = `<img class="brand-photo splash-photo" src="${brand.logoPhoto}" alt="${brand.webName || 'Onion Dark'} logo">`;
         }
 
         let pricing = { plans: {} };

@@ -87,7 +87,7 @@
                 ${hasImage ? `<div class="scrim"></div>` : ""}
                 <span class="banner-live"><i></i> Online</span>
                 <div class="banner-content">
-                    <div class="banner-heading"><div><div class="banner-brand brand-wordmark brand-wordmark-banner">${data.branding.webName || "BILAL VIP"}</div><div class="banner-subtitle">${data.branding.webSubtitle || "Secure WhatsApp Management Panel"}</div></div></div>
+                    <div class="banner-heading"><div><div class="banner-brand brand-wordmark brand-wordmark-banner">${data.branding.webName || "ONION DARK"}</div><div class="banner-subtitle">${data.branding.webSubtitle || "Secure WhatsApp Management Panel"}</div></div></div>
                     <div class="banner-welcome">Welcome back, <strong>${data.account.username}</strong></div>
                     <div class="banner-meta"><span>Role <strong>${data.account.role}</strong></span><span>Expires <strong>${data.account.expiredAt ? new Date(data.account.expiredAt).toLocaleDateString("en-US") : "Lifetime"}</strong></span><span>Senders <strong>${data.senderCount}</strong></span></div>
                 </div>
